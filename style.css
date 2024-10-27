@@ -1,16 +1,39 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
 }
 .boards {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
-.scoreSheets{
+.grid{
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+}
+.cell{  
+    height: 30px;
+    width: 30px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.cell:hover {
+    border: 1px solid white;
+}
+h4{
+    margin: 5px;
+}
+.scoreSheet{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    border: 2px solid grey
+}
+.shipmarker{
+    background-color: red;
+    display: inline-block;
+    width: 10px;
+    height: 5px;
 }
 button {
     padding: 10px 20px;
